@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300;400&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0%;
+    
+}
+.nav-list{
+width: 70%;
+display: flex;
+align-items: center;
+gap:70px;
+
+}
+.nav-list  li{
+    list-style: none;
+    
+
+}
+.nav-list  li a{
+    text-decoration: none;
+    color:white;
+    text-transform: capitalize;
+    
+
+}
+.nav-list  li a:hover{
+    text-decoration: none;
+    color:rgb(151, 145, 145);
+    text-transform: capitalize;
+
+}
+.rightNav{
+    padding: 10px 24px;
+    width: 30%;
+    text-align: right;
+}
+.logo img{
+    
+    width: 20%;
+    
+    
+    border-radius: 4px;
+    display: flex;
+}
+
+
+
+
+.logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search
+
+ {
+    padding: 5px;
+    border: -10;
+    font-size: 17px;
+    border-radius: 45px;
+}
+.background{
+    background: rgba(0,0,0,0) url(../imges/daniel-zacatenco-6rv0t2VjQR4-unsplash.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    max-width: 70%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height:90%
+   
+}
+.firstsection{    height: 100vh;}
+.firsthelf{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sechalf{
+    width: 50%;
+    text-align: -webkit-right;
+}
+.sechalf img{
+    width: 40%;
+    /* padding: 4px 0; */
+    border: 4px solid white;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+.text-big{
+ font-size: 40px;
+ text-transform: capitalize;
+}
+.text-small{
+    font-size: 16px;
+}
+.buttons{
+    padding: 20px;
+}
+.btn{
+    padding: 8px;
+    background: none;
+   color:white;
+   cursor: pointer;
+    border-radius: 15px;
+    font-size: 18px;
+    border: 2px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn-sm {
+    padding:3px 10px;
+    vertical-align: middle;
+}
+.secright{
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ margin: auto;
+ max-width: 80%;
+ font-family: "Ubuntu";
+}
+.thumbnail{
+    width: 50%;
+    text-align: -webkit-right;
+}
+.thumbnail img{
+    width: 60%;
+    /* padding: 4px 0; */
+    border: 4px solid white;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+
+}
+.secleft{
+    height:250px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+ margin: auto;
+ font-family: "Ubuntu";
+ max-width: 80%;
+ 
+}
+.secleft >.para {
+    width: 130%;
+    margin-right: 142px;
+}
+.contact{
+    text-align: center;
+  
+  
+}
+.form{
+    max-width:50%;
+    margin: auto;
+    font-family: "ubuntu";
+}
+.form input{
+width: 40%;
+    padding: 6px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 10px;
+    MARGIN-TOP: 30px;
+
+}
+.btnbark{
+    color: white;
+    background:#202a60;
+    
+}
+.footer{
+justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    background-color: #202a60;
+    height: 50px;
+    font-family: "ubuntu";
+}
+
+.berger{
+    position: absolute;
+    cursor: pointer;
+    right:5%;
+    top:15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height:4px;
+    margin: 5px 3px;
+}
+/******************Responsive************/
+@media only screen and (max-width:980px){
+    .logo img {
+        width: 60%;}
+    .navbar{
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+        height: 470px;
+    }
+    .nav-list{
+        gap:50px;
+        flex-direction: column;
+    }
+    .rightNav{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-sm{
+    width: 90px;
+    margin: auto;}
+
+    
+.berger{
+    display: block;
+}
+.h-nav-resp{
+    height:72px;
+}
+.v-class-resp{
+    opacity: 0;
+}
+.box-main{
+flex-direction: column-reverse;}
+.section{
+    margin-top: 60px;
+flex-direction: column-reverse;}
+.secleft >.para {
+    width: auto;
+    margin-right: 0px;
+}
+hr{
+    margin-top: 70px;
+}
+.contact{
+    text-align: center;
+  
+    height: auto;
+}
+.secright{height: auto;}
+.form input{width: 120%;}
+}
